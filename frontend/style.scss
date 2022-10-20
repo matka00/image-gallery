@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-image: url("/src/paper-background.jpg");
+  background-size: contain;
+
+  #root {
+    width: 100%;
+    margin: 0;
+
+    h2 {
+      width: 100%;
+      text-align: center;
+      margin: 30px 0 40px 0;
+      font-family: "Gentium Book Plus", serif;
+      font-size: 40px;
+      color: #000;
+    }
+
+    .swiper {
+      position: relative;
+      width: 800px;
+      height: auto;
+
+      .swiper-slide {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          max-width: 800px;
+          max-height: 600px;
+        }
+
+        .picture-detail-container {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+
+          p {
+            font-size: 20px;
+          }
+
+          .photographer-name {
+            padding-left: 40px;
+            background-image: url("./src/photo.png");
+            background-position: 2px;
+            background-repeat: no-repeat;
+            background-size: 25px 20px;
+          }
+
+          #delete-btn {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            right: 50%;
+            bottom: -50px;
+            transform: translateX(50%);
+            border: none;
+            background-image: url("/src/remove.png");
+            background-size: contain;
+            background-color: transparent;
+            filter: drop-shadow(5px 5px 10px rgb(100, 100, 100));
+          }
+        }
+
+        #delete-btn:active {
+          filter: drop-shadow(0 0 0 rgb(100, 100, 100));
+        }
+      }
+    }
+
+    #upload-form-container {
+      align-items: center;
+      width: 80%;
+      margin: 80px auto 0 auto;
+      padding: 20px 0;
+      border-top-style: solid;
+      border-color: rgb(100, 100, 100);
+      border-width: 1px;
+
+      h3 {
+        width: 100%;
+        margin: 0 0 20px 0;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 500;
+      }
+
+      #upload-form {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        input {
+          height: 25px;
+          padding: 5px;
+          border-style: none;
+          border-radius: 5px;
+          font-size: 15px;
+        }
+
+        input:focus {
+          outline: none;
+        }
+
+        input::placeholder {
+          color: rgb(117, 117, 117);
+        }
+
+        #photo {
+          height: auto;
+          width: 200px;
+        }
+
+        #photo::file-selector-button {
+          height: 35px;
+          padding: 5px;
+          box-sizing: border-box;
+          border-style: none;
+          border-radius: 5px;
+          font-size: 15px;
+          color: rgb(168, 23, 50);
+        }
+
+        #upload-btn {
+          width: 80px;
+          height: 80px;
+          border-style: none;
+          border-radius: 50%;
+          background-image: url("/src/pink-background4.png");
+          background-size: cover;
+          box-shadow: 5px 5px 10px rgb(100, 100, 100);
+          font-size: 18px;
+          font-weight: 700;
+          color: #fff;
+        }
+
+        #upload-btn:active {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

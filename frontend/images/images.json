@@ -1,0 +1,32 @@
+[
+    {
+        "pictureUrl": "moss_plants.jpg",
+        "title": "Moss",
+        "uploadDate": 1658866231655,
+        "photographer": "Beryl Bridges"
+    },
+    {
+        "pictureUrl": "forest_from_above.jpg",
+        "title": "Forest from above",
+        "uploadDate": 1658866306897,
+        "photographer": "Rupert Waller"
+    },
+    {
+        "pictureUrl": "lake_hallstatt.jpg",
+        "title": "Hallstatt",
+        "uploadDate": 1658866328223,
+        "photographer": "Shawnee Thorburn"
+    },
+    {
+        "pictureUrl": "rainy_leaf.jpg",
+        "title": "Rain",
+        "uploadDate": 1658866345569,
+        "photographer": "Lane Potter"
+    },
+    {
+        "pictureUrl": "foggy_green_forest.jpg",
+        "title": "Foggy forest",
+        "uploadDate": 1658866384866,
+        "photographer": "Merlyn Hambleton"
+    }
+]

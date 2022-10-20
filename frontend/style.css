@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-image: url("/src/paper-background.jpg");
+  background-size: contain;
+}
+
+body #root {
+  width: 100%;
+  margin: 0;
+}
+
+body #root h2 {
+  width: 100%;
+  text-align: center;
+  margin: 30px 0 40px 0;
+  font-family: "Gentium Book Plus", serif;
+  font-size: 40px;
+  color: #000;
+}
+
+body #root .swiper {
+  position: relative;
+  width: 800px;
+  height: auto;
+}
+
+body #root .swiper .swiper-slide {
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #root .swiper .swiper-slide img {
+  max-width: 800px;
+  max-height: 600px;
+}
+
+body #root .swiper .swiper-slide .picture-detail-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #root .swiper .swiper-slide .picture-detail-container p {
+  font-size: 20px;
+}
+
+body #root .swiper .swiper-slide .picture-detail-container .photographer-name {
+  padding-left: 40px;
+  background-image: url("./src/photo.png");
+  background-position: 2px;
+  background-repeat: no-repeat;
+  background-size: 25px 20px;
+}
+
+body #root .swiper .swiper-slide .picture-detail-container #delete-btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 50%;
+  bottom: -50px;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  border: none;
+  background-image: url("/src/remove.png");
+  background-size: contain;
+  background-color: transparent;
+  -webkit-filter: drop-shadow(5px 5px 10px #646464);
+          filter: drop-shadow(5px 5px 10px #646464);
+}
+
+body #root .swiper .swiper-slide #delete-btn:active {
+  -webkit-filter: drop-shadow(0 0 0 #646464);
+          filter: drop-shadow(0 0 0 #646464);
+}
+
+body #root #upload-form-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 80px auto 0 auto;
+  padding: 20px 0;
+  border-top-style: solid;
+  border-color: #646464;
+  border-width: 1px;
+}
+
+body #root #upload-form-container h3 {
+  width: 100%;
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+body #root #upload-form-container #upload-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+body #root #upload-form-container #upload-form input {
+  height: 25px;
+  padding: 5px;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+body #root #upload-form-container #upload-form input:focus {
+  outline: none;
+}
+
+body #root #upload-form-container #upload-form input::-webkit-input-placeholder {
+  color: #757575;
+}
+
+body #root #upload-form-container #upload-form input:-ms-input-placeholder {
+  color: #757575;
+}
+
+body #root #upload-form-container #upload-form input::-ms-input-placeholder {
+  color: #757575;
+}
+
+body #root #upload-form-container #upload-form input::placeholder {
+  color: #757575;
+}
+
+body #root #upload-form-container #upload-form #photo {
+  height: auto;
+  width: 200px;
+}
+
+body #root #upload-form-container #upload-form #photo::file-selector-button {
+  height: 35px;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #a81732;
+}
+
+body #root #upload-form-container #upload-form #upload-btn {
+  width: 80px;
+  height: 80px;
+  border-style: none;
+  border-radius: 50%;
+  background-image: url("/src/pink-background4.png");
+  background-size: cover;
+  -webkit-box-shadow: 5px 5px 10px #646464;
+          box-shadow: 5px 5px 10px #646464;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+body #root #upload-form-container #upload-form #upload-btn:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/*# sourceMappingURL=style.css.map */
